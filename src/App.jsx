@@ -1,10 +1,9 @@
 import React from "react";
 import { Card, CardContent } from "./components/ui/card"; 
 
-
 export default function FinanceDashboard() {
   return (
-    <div className="min-h-screen bg-[#f0f2f8] p-6 grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
+    <div className="min-h-screen bg-[#f0f2f8] p-6 grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-8">
       {/* Revenue Card */}
       <div className="col-span-1 space-y-4">
         <Card>
