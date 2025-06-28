@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "./components/ui/card"; 
+const API_BASE_URL = "https://arthyabackend.onrender.com";
+
 
 export default function FinanceDashboard() {
   const [weeklyExpenses, setWeeklyExpenses] = useState({});
 
 useEffect(() => {
-  fetch("https://arthya-backend.onrender.com/api/expenses/test_user_123")
+  fetch(`${API_BASE_URL}/api/expenses/test_user_123`)
+
     .then((res) => res.json())
     .then((data) => {
       const totals = {};
